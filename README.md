@@ -9,7 +9,7 @@ Para a aplicação, utilizamos o banco de dados MySQL, utilizando o XAMPP para c
 
 ### `Procedimento de Configuração do Banco de Dados:`
 
-Inicie o XAMPP e verifique se os serviços do Apache e do MySQL estão em execução.]
+Inicie o XAMPP e verifique se os serviços do Apache e do MySQL estão em execução.
 
 Abra um navegador da web e acesse o phpMyAdmin, clicando no link "admin" ao lado do serviço do MySQL.
 
@@ -42,43 +42,55 @@ id (int(11)): Identificador da altura (chave primária).
 ## Rotas da API
 
 ### `Autenticação/Realizar Login`<br>
-Endpoint: POST /login Descrição: Realiza o login do usuário e retorna um token JWT para autenticação posterior.<br>
+Endpoint: POST /login<br>
+Descrição: Realiza o login do usuário e retorna um token JWT para autenticação posterior.<br>
 
 ### `Tutor`
 **Consultar todos os Tutores**<br>
-Endpoint: GET /tutor Descrição: Retorna todos os tutores cadastrados.
+Endpoint: GET /tutor<br>
+Descrição: Retorna todos os tutores cadastrados.
 
 **Criar um Tutor**<br>
-Endpoint: POST /tutor Descrição: Cria um novo tutor.
+Endpoint: POST /tutor<br>
+Descrição: Cria um novo tutor.
 
 **Atualizar um Tutor**<br>
-Endpoint: PUT /tutor/:cpf Descrição: Atualiza as informações de um tutor específico com base no CPF.
+Endpoint: PUT /tutor/:cpf<br>
+Descrição: Atualiza as informações de um tutor específico com base no CPF.
 
 **Excluir um Tutor**<br>
-Endpoint: DELETE /tutor/:cpf Descrição: Exclui um tutor específico com base no CPF.
+Endpoint: DELETE /tutor/:cpf<br>
+Descrição: Exclui um tutor específico com base no CPF.
 
 ### `Pet`
 **Consultar todos os Pets**<br>
-Endpoint: GET /pet Descrição: Retorna todos os pets cadastrados.
+Endpoint: GET /pet<br>
+Descrição: Retorna todos os pets cadastrados.
 
 **Consultar Pets por Tutor**<br>
-Endpoint: GET /petTutor/:cpf Descrição: Retorna os pets associados a um tutor específico com base no CPF.
+Endpoint: GET /petTutor/:cpf<br>
+Descrição: Retorna os pets associados a um tutor específico com base no CPF.
 
 **Consultar Pets por Altura**<br>
-Endpoint: GET /petAltura/:altura Descrição: Retorna os pets que possuem a altura especificada.
+Endpoint: GET /petAltura/:altura<br>
+Descrição: Retorna os pets que possuem a altura especificada.
 
 **Criar um Pet**<br>
-Endpoint: POST /pet Descrição: Cria um novo pet.
+Endpoint: POST /pet<br>
+Descrição: Cria um novo pet.
 
 **Atualizar um Pet**<br>
-Endpoint: PUT /pet/:codigo_pet Descrição: Atualiza as informações de um pet específico com base no código do pet.
+Endpoint: PUT /pet/:codigo_pet<br>
+Descrição: Atualiza as informações de um pet específico com base no código do pet.
 
 **Excluir um Pet**<br>
-Endpoint: DELETE /pet/:codigo_pet Descrição: Exclui um pet específico com base no código do pet.
+Endpoint: DELETE /pet/:codigo_pet<br>
+Descrição: Exclui um pet específico com base no código do pet.
 
 ### `Altura`
 **Consultar Altura de Pet**<br>
-Endpoint: GET /altura_pet Descrição: Retorna as diferentes alturas associadas aos pets.
+Endpoint: GET /altura_pet<br>
+Descrição: Retorna as diferentes alturas associadas aos pets.
 
 ### `Observação:`<br>
 Certifique-se de fornecer detalhes adicionais, como os parâmetros esperados em cada rota, o formato de dados aceitos e as respostas retornadas.
