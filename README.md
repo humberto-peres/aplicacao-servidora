@@ -105,4 +105,7 @@ Certifique-se de incluir o token JWT no cabeçalho das requisições para as rot
 ## Conclusão
 Este documento descreve os procedimentos de configuração e utilização da aplicação servidora desenvolvida para gerenciar a tutoria de pets. Siga as instruções fornecidas para configurar o ambiente e utilize as rotas da API para interagir com o sistema. Certifique-se de fornecer todas as informações necessárias, como autenticação, parâmetros e respostas esperadas, ao utilizar as rotas.
 
+Alunos:<br>
+Humberto Peres da Rocha Filho<br>
+Weslly Hendler Neres
 
